@@ -1,3 +1,4 @@
+
 // $bg-1: #322e4a;
 $bg-1: hsl(250, 28%, 11%);
 $bg-2: darken($bg-1, 15);
@@ -10,6 +11,7 @@ $white-4: #282347;
 $black-1: #1f2158;
 $black-2: darken($black-1, 10);
 $black-3: darken($black-2, 5);
+
 
 // $neon-1: #5474FB;
 // $neon-2: #283CD2;
@@ -29,9 +31,13 @@ $cuadro-2: #0F1110;
     &__top{ @include cube-top($width, $height, $depth);}
     &__bottom{ @include cube-bottom($width, $height, $depth); }
 }
+
+
 /************************/
 /* Mixin para crear cubo ( Caras siempre al frente ) */
 /************************/
+
+
 @mixin cube-front($width, $height, $depth) {
     width: $width;
     height: $height;
@@ -68,8 +74,12 @@ $cuadro-2: #0F1110;
     transform-origin: top left;
     transform: rotateY(180deg) translateX(-$width);
 }
+
+
 /***********************/
 /***********************/
+
+
 @mixin face-ani($animation, $time, $side, $width-el, $height-el, $depth-el) {
 
     animation: #{$animation} #{$time} infinite ease;
@@ -230,8 +240,12 @@ body{
             filter: blur(.35vw);
         }
     }
+
+
 /***************/
 /***************/
+
+
 .alt{
 	$width-el: 27vw;
 	$height-el: .5vw;
