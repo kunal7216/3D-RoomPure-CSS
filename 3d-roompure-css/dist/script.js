@@ -1,8 +1,3 @@
-/*
-		Designed by: Jarlan Perez
-		Original image: https://www.artstation.com/artwork/VdBllN
-
-*/
 
 
 const h = document.querySelector("#h");
